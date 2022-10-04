@@ -35,7 +35,7 @@ public class TravelAgency {
       System.out.println("Suppliers:");
       int num = suppliers.size();
       for(int i = 0; i < num;i++){
-         suppliers.get(i).toString();
+         System.out.println(suppliers.get(i).toString());
       }
    }
 }

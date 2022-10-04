@@ -106,4 +106,27 @@ public class Position {
       return ("(" + this.x + "," + this.y + ")");
    }
 
+   public static double euclide(Position p1, Position p2){
+      double delta_x = (p1.x - p2.x)*(p1.x - p2.x);
+      double delta_y = (p1.y - p2.y)*(p1.y - p2.y);
+
+      return Math.sqrt(delta_x + delta_y);
+   }
+
+   public static double manhattan(Position p1, Position p2){
+      return Math.abs(p2.x - p1.x ) + Math.abs(p2.y - p1.y);
+   }
+
+   static public double distance(DistanceType type , Position p1, Position p2){
+
+         switch(type){
+            case EUCLIDE:
+               return Position.euclide(p1, p2);
+            case MANHATTAN:
+               return Position.manhattan(p1, p2);
+            default:
+               return 0;
+         }
+
+   }
 }

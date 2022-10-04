@@ -10,15 +10,15 @@ public class Airline {
    }
 
    public String getName() {
-      return name;
+      return this.name;
    }
 
    public String getIata() {
-      return iata;
+      return this.iata;
    }
 
    public String toString() {
-      return name + "(" + iata + ")";
+      return this.name + "(" + this.iata + ")";
    }
 
 }

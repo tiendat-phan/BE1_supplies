@@ -1,5 +1,6 @@
 package trips;
 
+import org.assertj.core;
 import org.assertj.core.api.WithAssertions;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
