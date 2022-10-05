@@ -1,41 +1,34 @@
 package airlines;
 
-import java.util.ArrayList;
+
+import java.util.HashMap;
 
 public class TravelAgency {
 
    private String name;
-   private ArrayList<Airline> suppliers;
+   
+   private HashMap<String, Airline> suppliers;
 
    public TravelAgency(String name) {
       this.name = name;
-      suppliers = new ArrayList<>();
+      this.suppliers = new HashMap<>();
+
    }
 
    public void addAirline(Airline airline) {
-      suppliers.add(airline);
+      this.suppliers.put(airline.getIata(),airline);
    }
 
    public Airline getAirlineByIata(String iata) {
-      int num = suppliers.size();
-      for(int i = 0; i < num; i++) {
-
-         if(suppliers.get(i).getIata() == iata ){
-            return suppliers.get(i);
-            
-         }
-      }
-      return null;
+     return this.suppliers.get(iata);
 
       
    }
-
+   
    public void display() {
       System.out.println(this.name);
       System.out.println("Suppliers:");
-      int num = suppliers.size();
-      for(int i = 0; i < num;i++){
-         System.out.println(suppliers.get(i).toString());
-      }
+      
+      System.out.println(this.suppliers.toString());
    }
 }
