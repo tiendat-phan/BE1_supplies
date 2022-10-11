@@ -3,13 +3,13 @@ package trips;
 public class Flight {
 
     private String flightNumber;
-    private Airport depAirport;
-    private Airport arrAirport;
+    private Airport departureAirport;
+    private Airport arrivalAirport;
 
     public Flight(String flightNumber, Airport depAirport, Airport arrAirport){
         this.flightNumber = flightNumber;
-        this.arrAirport = arrAirport;
-        this.depAirport = depAirport;
+        this.arrivalAirport = arrAirport;
+        this.departureAirport = depAirport;
     }
 
     public String getFlightNumber(){
@@ -17,15 +17,15 @@ public class Flight {
     }
 
     public Airport getDepartureAirport(){
-        return this.depAirport;
+        return this.departureAirport;
     }
 
     public Airport getArrivalAirport(){
-        return this.arrAirport;
+        return this.arrivalAirport;
     }
 
     public String toString(){
-        return this.flightNumber + " : " + this.depAirport.getIata() + " - " + this.arrAirport.getIata();
+        return this.flightNumber + " : " + this.departureAirport.getIata() + " - " + this.arrivalAirport.getIata();
     }
 
     public boolean isConnectedTo(Flight next ){

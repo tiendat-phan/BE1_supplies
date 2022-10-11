@@ -22,6 +22,7 @@ public class Airport {
     }
 
     public boolean isSameAs(Airport that){
-        return this.getIata() == that.getIata();
+        
+        return that != null && iata.equals(that.iata);
     }
 }

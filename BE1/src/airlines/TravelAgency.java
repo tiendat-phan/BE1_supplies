@@ -2,16 +2,17 @@ package airlines;
 
 
 import java.util.HashMap;
+import java.util.TreeMap;
 
 public class TravelAgency {
 
    private String name;
    
-   private HashMap<String, Airline> suppliers;
+   private TreeMap<String, Airline> suppliers;
 
    public TravelAgency(String name) {
       this.name = name;
-      this.suppliers = new HashMap<>();
+      this.suppliers = new TreeMap<>();
 
    }
 
