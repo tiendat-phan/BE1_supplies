@@ -1,7 +1,7 @@
 # BE1_supplies_chain
 This is a basic Java program to tackle the problem of transporting airplanes.
 
-#The idea
+## The idea
 There are 3 main files:
 * airlines
 * geometry
