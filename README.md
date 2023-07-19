@@ -8,6 +8,7 @@ There are 3 main files:
 * trips
 
 In each file, there are functions that conduct to define the name of the airline, the position of the hub, and the information about the trip. 
+
 In general, we have to create a program to guarantee all flights can be connected without interruption `SOS`
 
 
