@@ -1,7 +1,7 @@
 # BE1_supplies_chain
 This is a basic Java program to tackle the problem of transporting airplanes.
 
-* Main file: `be2.py`
+* Main folder: `BE1`
 
 ## The idea
 There are 3 main files:
